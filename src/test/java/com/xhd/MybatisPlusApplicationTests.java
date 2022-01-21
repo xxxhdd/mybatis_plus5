@@ -72,7 +72,7 @@ class MybatisPlusApplicationTests {
         user2.setEmail("2803708553@qq.com");
         userMapper.updateById(user2);
         //自旋锁来多次尝试提交！
-        userMapper.updateById(user1);//如果没有乐观锁就会覆盖插队线程的值
+        userMapper.updateById(user1);//如果没有乐观锁就会覆盖插队线程的值11
     }
 
 
