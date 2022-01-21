@@ -142,6 +142,8 @@ class MybatisPlusApplicationTests {
         userMapper.deleteByMap(map);
 
         System.out.println("master test!");
+        System.out.println("hot-fix test");
+
     }
 
 }
