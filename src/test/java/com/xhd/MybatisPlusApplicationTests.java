@@ -1,5 +1,6 @@
 package com.xhd;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.xhd.mapper.UserMapper;
 import com.xhd.pojo.User;
@@ -140,6 +141,7 @@ class MybatisPlusApplicationTests {
         map.put("age", "18");
         map.put("name", "lol");
         userMapper.deleteByMap(map);
-    }
 
+        System.out.println("hot-fix test");
+    }
 }
