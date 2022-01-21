@@ -140,6 +140,8 @@ class MybatisPlusApplicationTests {
         map.put("age", "18");
         map.put("name", "lol");
         userMapper.deleteByMap(map);
+
+        System.out.println("master test!");
     }
 
 }
